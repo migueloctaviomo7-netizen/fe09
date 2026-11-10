@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <script src="script.js"></script>4
+    <div class="saas-page">
+        <header class="saas-nav">
+            <div class="saas-container nav-row">
+                <a href="#" class="saas-logo">⚡ CloudFlow</a>
+                <nav class="saas-menu-desk">
+                    <a href="#recursos">Recursos</a>
+                    <a href="#metricas">Métricas</a>
+                    <a href="#precos">Preços</a>
+                </nav>
+                <div class="nav-right">
+                    <a href="#precos" class="btn-acesso">Entrar</a>
+                    <button class="btn-hamb" onclick="toggleSaasMenu()">☰</button>
+                </div>
+            </div>
+            <div class="saas-menu-mob" id="mobMenu">
+                <a href="#recursos" onclick="toggleSaasMenu()">Recursos</a>
+                <a href="#metricas" onclick="toggleSaasMenu()">Métricas</a>
+                <a href="#precos" onclick="toggleSaasMenu()">Preços</a>
+            </div>
+        </header>
+    
+        <section class="saas-hero">
+            <div class="saas-container hero-grid">
+                <div class="hero-info">
+                    <span class="badge-versao">✨ VERSÃO 4.0 PRONTA</span>
+                    <h1>Automação em nuvem para <span>times modernos</span></h1>
+                    <p>Conecte seus bancos de dados e gere pipelines serverless em minutos com total segurança.</p>
+                    <div class="hero-actions">
+                        <a href="#precos" class="btn-prim">Testar 14 Dias Grátis</a>
+                        <a href="#recursos" class="btn-sec">Ver Recursos</a>
+                    </div>
+                    <div class="garantias">
+                        <span>✓ Sem cartão de crédito</span>
+                        <span>✓ Cancele quando quiser</span>
+                    </div>
+                </div>
+                <div class="hero-mockup">
+                    <div class="mockup-header">
+                        <span class="m-dot r"></span><span class="m-dot y"></span><span class="m-dot g"></span>
+                    </div>
+                    <div class="mockup-content">
+                        <div class="metric-line">
+                            <span>Requisições Hoje</span>
+                            <strong>+24.810</strong>
+                        </div>
+                        <div class="bar-bg">
+                            <div class="bar-val"></div>
+                        </div>
+                        <div class="terminal-log">
+                            $ flow deploy --cluster-br<br>
+                            &gt; Postgres conectado: OK<br>
+                            &gt; Latência média: 22ms<br>
+                            &gt; Status: 100% Operacional
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="saas-stats" id="metricas">
+            <div class="saas-container stats-grid">
+                <div class="stat-col"><strong>99.98%</strong><span>Disponibilidade</span></div>
+                <div class="stat-col"><strong>&lt; 30ms</strong><span>Latência Média</span></div>
+                <div class="stat-col"><strong>12.000+</strong><span>Devs Ativos</span></div>
+            </div>
+        </section>
+    
+        <section class="saas-cards-sec" id="recursos">
+            <div class="saas-container">
+                <div class="sec-title">
+                    <h2>Feito para Alta Performance</h2>
+                    <p>Infraestrutura distribuída com zero fricção de configuração.</p>
+                </div>
+                <div class="cards-grid">
+                    <div class="feature-box">
+                        <span class="ico">⚡</span>
+                        <h3>Latência Ultrabaixa</h3>
+                        <p>Servidores distribuídos em edge para resposta instantânea.</p>
+                    </div>
+                    <div class="feature-box">
+                        <span class="ico">🛡️</span>
+                        <h3>Segurança Bancária</h3>
+                        <p>Criptografia ponta a ponta e total conformidade com a LGPD.</p>
+                    </div>
+                    <div class="feature-box">
+                        <span class="ico">📈</span>
+                        <h3>Métricas em Tempo Real</h3>
+                        <p>Dashboards completos com exportação de logs e alertas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="saas-pricing-sec" id="precos">
+            <div class="saas-container">
+                <div class="sec-title">
+                    <h2>Planos Claros e Transparentes</h2>
+                    <p>Escale conforme sua demanda sem surpresas no fim do mês.</p>
+                </div>
+                <div class="pricing-grid">
+                    <div class="price-box">
+                        <div>
+                            <h3>Iniciante</h3>
+                            <p class="desc">Para protótipos e testes.</p>
+                            <div class="valor">R$ 86 <span>/mês</span></div>
+                            <ul>
+                                <li>✓ 5 pipelines ativas</li>
+                                <li>✓ Suporte comunitário</li>
+                            </ul>
+                        </div>
+                        <button class="btn-plano">Escolher Plano</button>
+                    </div>
+                    <div class="price-box destaque">
+                        <span class="tag-dest">MAIS POPULAR</span>
+                        <div>
+                            <h3>Pro</h3>
+                            <p class="desc">Para aplicações em produção.</p>
+                            <div class="valor">R$ 129 <span>/mês</span></div>
+                            <ul>
+                                <li>✓ Pipelines ilimitadas</li>
+                                <li>✓ Suporte 24/7 prioritário</li>
+                            </ul>
+                        </div>
+                        <button class="btn-plano btn-dest">Testar por 14 Dias</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="saas-foot">
+            <div class="saas-container">
+                <p>© 2026 CloudFlow Inc. Todos os direitos reservados. 100% fluido em qualquer tela.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
