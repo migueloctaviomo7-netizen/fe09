@@ -1,6 +1,5 @@
 # fe09
 
-botanica (http://127.0.0.1:5500/botanica/index.html#)
+https://migueloctaviomo7-netizen.github.io/floricultura/
 
-http://127.0.0.1:5500/pequena%20impresa/index.html
-.
+https://migueloctaviomo7-netizen.github.io/FinPulse/
